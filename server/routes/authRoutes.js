@@ -6,7 +6,7 @@ const upload = require('../config/multer');
 const authMiddleware = require('../middleware/AuthMiddleware');
 
 // Register (with profile pic upload)
-router.post('/register', upload.single('profile_pic'), registerUser);
+router.post('/register', registerUser);
 
 // Login
 router.post('/login', loginUser);
